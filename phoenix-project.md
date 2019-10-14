@@ -58,3 +58,22 @@ The team agreed upon a definition of a 'change':
 > A 'change' is any activity that is physical, logical, or virtual to applications, databases, operating systems, networks, or hardware that could impact services being delivered.
 
 The number of changes submitted was massive. This meant that although they couldn't pre-authorise some of the changes, they allowed them to le made for a day or two until they could catch up, to prevent loss of support for the new procedure. 
+
+# Workflow Management
+Work in progress (WIP) is one of the root causes for chronic due-date problems, quality issues and expiditers having to re-juggle priorities every day. Without control of 'job' and 'material' release, you can't control WIP. 
+
+There are three (scientifically grounded) management movements:
+* the Theory of Constraints (ToC)
+* Lean Production (Lean) (a.k.a. Toyota Production System) 
+* Total Quality Management (TQM)
+These are rolled up into The Three Ways:
+* First Way - create fast flow of work
+* Second Way - shorten and amplify feedback loops to create quality at source and reduce defects
+* Third Way - culture that fosters experimentation, learning from failure, understanding repetition and practice are the key to mastery. 
+
+> The goal is to ensure the fast, predictable and uninterrupted flow of planned work that delivers value to the business while minimising the impact and disruption of unplanned work, so you can provide stable, predictable and secure IT services. 
+Work should be released depending on how quickly the bottleneck resource can consume work. Improvements anywhere outside the bottleneck are an Illusion (ToC). 
+
+# What is "Work"?
+Four types of work:
+* Business Project work
