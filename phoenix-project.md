@@ -72,6 +72,7 @@ These are rolled up into The Three Ways:
 * Third Way - culture that fosters experimentation, learning from failure, understanding repetition and practice are the key to mastery. 
 
 > The goal is to ensure the fast, predictable and uninterrupted flow of planned work that delivers value to the business while minimising the impact and disruption of unplanned work, so you can provide stable, predictable and secure IT services. 
+
 Work should be released depending on how quickly the bottleneck resource can consume work. Improvements anywhere outside the bottleneck are an Illusion (ToC). 
 
 # What is "Work"?
