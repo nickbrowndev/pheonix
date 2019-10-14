@@ -1,6 +1,6 @@
 # Background 
-## About "The Pheonix Project"
-The Pheonix Project is a book by Gene Kim that describes the troubled software releases of a company called Parts Unlimited, and how Bill Palmer, recently reluctantly promoted to VP of IT Operations, is able to promote change over to stabilise the IT systems, successfully deliver the project and turn around the company's fortunes.
+## About "The Phoenix Project"
+The Phoenix Project is a book by Gene Kim that describes the troubled software releases of a company called Parts Unlimited, and how Bill Palmer, recently reluctantly promoted to VP of IT Operations, is able to promote change over to stabilise the IT systems, successfully deliver the project and turn around the company's fortunes.
 
 ## Incident Resolution
 1. Pull together all of the information you know about the issue, e.g.
