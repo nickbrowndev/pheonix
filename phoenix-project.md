@@ -34,7 +34,7 @@ This shows:
 * Lack of resources and resource conflicts 
 * Most critical projects would take a long time to complete even without the competition for resources
 * Incident and defect resolution work is taking up 75% of the staffs time. Due to severity of incidents, it takes priority over other, scheduled work.
-* Proritisation of work is down to the person, and often they are leant on or favours asked to prioritize certain work items, and do additional unplanned work.
+* Proritisation of work is down to the person, and often they are leant on or favours asked to prioritize certain work items, and do additional unplanned work. Prioritisation direction needs to come from the management, and understanding the tradeoffs required. 
 It also indicates where the departments are understaffed, and where additional resources need to be brought in.
 
 ## Restarting the Change Management Process
@@ -57,7 +57,23 @@ There is reluctance to drop the previously laid out change process, but it's poi
 The team agreed upon a definition of a 'change':
 > A 'change' is any activity that is physical, logical, or virtual to applications, databases, operating systems, networks, or hardware that could impact services being delivered.
 
-The number of changes submitted was massive. This meant that although they couldn't pre-authorise some of the changes, they allowed them to le made for a day or two until they could catch up, to prevent loss of support for the new procedure. 
+The number of changes submitted was massive. This meant that although they couldn't pre-authorise some of the changes, they allowed them to be made for a day or two until they could catch up, to prevent loss of support for the new procedure. 
+
+## Proritisation Of Changes
+Categorise tasks based upon the anticipated impact or risk of the change
+### High-risk Tasks 
+Those that make changes to risky application, the network or shared databases. List the things that belong in this category. Items in this group must be approved before being scheduled and implemented. 
+These changes must have standard procedures to make the changes, such as when they need to be implemented, and what key resources need to be on standby in case there are issues. 
+Inform the people requesting these changes on the risks associated
+* success rates
+* anticipated downtime
+as these may cause the change to be withdrawn entirely.
+
+### Medium Risk Changes
+These are things such as Java Heap Size changes. The submitter for these changes has responsibility and accountability for consulting and seeking approval from anyone that could be affected. Once that's done, the change is reviewed and scheduled. The Board's job is to ensure the process is followed. 
+
+### Standard Changes
+Changes that have been done many times before (data uploads etc) that are known to be low-risk should be pre-approved. They still need to be submitted, but can be scheduled independently.
 
 # Workflow Management
 Work in progress (WIP) is one of the root causes for chronic due-date problems, quality issues and expiditers having to re-juggle priorities every day. Without control of 'job' and 'material' release, you can't control WIP. 
