@@ -26,6 +26,8 @@ Single people are critical to keep multiple things progressing, and bottleneck t
 Due to amount of current work, and firefighting current issues, future planning and design falls by the wayside. Status is not really known, and work (primarily testing) is being deferred due to time limitations.
 Turn around time of supporting teams is excessively long.
 
+# Resol
+
 ## Discovering Totality Of Current Work 
 Pull together all of the currently in-progress work, along with resources required, expected timeline to complete, prioritisation, deadline and impacts etc so that resourcing and a schedule can be worked out.
 This shows: 
@@ -62,12 +64,13 @@ The number of changes submitted was massive. This meant that although they could
 ## Proritisation Of Changes
 Categorise tasks based upon the anticipated impact or risk of the change
 ### High-risk Tasks 
-Those that make changes to risky application, the network or shared databases. List the things that belong in this category. Items in this group must be approved before being scheduled and implemented. 
+Those that make changes to risky application, the network or shared databases. List the things that belong in this category. Items in this group must be approved by the board before being scheduled and implemented. 
 These changes must have standard procedures to make the changes, such as when they need to be implemented, and what key resources need to be on standby in case there are issues. 
 Inform the people requesting these changes on the risks associated
 * success rates
 * anticipated downtime
 as these may cause the change to be withdrawn entirely.
+The submitter for these changes has responsibility and accountability for consulting and seeking approval from anyone that could be affected.
 
 ### Medium Risk Changes
 These are things such as Java Heap Size changes. The submitter for these changes has responsibility and accountability for consulting and seeking approval from anyone that could be affected. Once that's done, the change is reviewed and scheduled. The Board's job is to ensure the process is followed. 
