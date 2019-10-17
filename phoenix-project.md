@@ -61,6 +61,9 @@ The team agreed upon a definition of a 'change':
 
 The number of changes submitted was massive. This meant that although they couldn't pre-authorise some of the changes, they allowed them to be made for a day or two until they could catch up, to prevent loss of support for the new procedure. 
 
+### Resource Dependency Planning
+Additionally, tasks that require scarce resources or people (environments, people, hardware etc) must be identified at task submission. This prevents work competing for resources to be released into WIP. The tasks that do need competing resources should then identify if a substitute can be used (another person) or be prioritised and scheduled. (ToC). 
+
 ## Proritisation Of Changes
 Categorise tasks based upon the anticipated impact or risk of the change
 ### High-risk Tasks 
@@ -83,6 +86,7 @@ When a single person contains all of the knowledge about something, they often b
 Often the prioritisation of bottlenecks' work is done by who shouts loudest. 
 To resolve this:
 * Instruct the bottleneck to only work on assigned tasks. Reject any other tasks that are handed to them. Any other work should be sent to the team lead for handling. 
+** It may be that other tasks cannot be completed because they require the resource. This is a planning issue - the tasks need to be released according to the dependencies. 
 * Every time the bottleneck fixes the issue, they get a bit smarter and the others get a bit dumber. 
 
 Create a pool of resources to stand in for the bottleneck, to resolve all incidents to closure. They would be responsible for documenting what they had learned, and they would be able to request permission to have access to the bottleneck if required.  The bottleneck would not be involved except for advising, and is not allowed to do anything that can't be documented afterwards. Tickets to the bottleneck should be recorded in the ticketing system for future review and analysis. 
