@@ -98,18 +98,58 @@ There are three (scientifically grounded) management movements:
 * the Theory of Constraints (ToC)
 * Lean Production (Lean) (a.k.a. Toyota Production System) 
 * Total Quality Management (TQM)
+
 These are rolled up into The Three Ways:
-* First Way - create fast flow of work
-* Second Way - shorten and amplify feedback loops to create quality at source and reduce defects
+* First Way - create fast flow of work. 
+** Use tools to help with the visual management of the work and its frow through the system. A Kanban board is one of the best ways to achieve this. 
+** Look for ways to prevent work entering the system - make sure all work complies with the business objectives. 
+* Second Way - shorten and amplify feedback loops to create quality at source and reduce defects. 
+** This is key to reducing unplanned work, which kills productivity.
 * Third Way - culture that fosters experimentation, learning from failure, understanding repetition and practice are the key to mastery. 
 
 > The goal is to ensure the fast, predictable and uninterrupted flow of planned work that delivers value to the business while minimising the impact and disruption of unplanned work, so you can provide stable, predictable and secure IT services. 
 
 Work should be released depending on how quickly the bottleneck resource can consume work. Improvements anywhere outside the bottleneck are an Illusion (ToC). 
 
+## Constraints - Increasing the Flow
+The first step to increasing flow is recognising your constraints. "The Goal" teaches us that in most plants there are a very small number of resources (personnel, machines, materials) that dictate the output of the entire system. This is the constraint/bottleneck. *Until you create a trusted system to manage the flow of work to the constraint, the constraint is constantly wasted*, which means the constraint is likely being drastically underutilised, and you're not delivering the full capacity you could. It also means you are not paying down technical debt, so your problems and amount of unplanned work continues to increase over time. 
+
+It is critical to protect your constraints in the system so that you can get maximum throughput. 
+
+### Steps to Define Constraints
+1. Identify the constraint. Keep challenging yourself to really make sure that it's your organisational constraint, because if you're wrong, no improvement will matter. Any improvement not made at the constraint is just an illusion. 
+1. Exploit the constraint. Ensure the constraint is not allowed to waste any time ever. It should never be waiting for resources and it should always be working on the highest priority commitment the team has made to the programme. 
+** Reduce reliance on the constraint
+** Work out how to exploit the constraint more effectively. 
+** Keep eradicating unplanned work. 
+1. Subordinate the constraint. In the Theory of Constraints this is typically implemented by something called Drum-Buffer-Rope. 
+** A boy-scout troop can only move at a pace dictated by the slowest member. Put the slowest member first to prevent others from going too far ahead. 
+** Release all work in accordance to the rate it can be consumed by the constraint. This sets the tempo of work for the organisation.
+
+
 # What is "Work"?
 Four types of work:
 * Business Project work
 * Internal IT Projects
 * Changes
-* Unplanned Work (waste)
+* Unplanned Work 
+** This is work that prevents you from doing all of the other planned types of work. Unplanned work clears out any planned work because it is typically critically important. 
+*** Coordinating changes so they don't fail (and create issues that need resolving)
+*** Ensure the orderly handling of incidents and outages to prevent interrupting key resources
+***  (waste)
+** It is important to find out where unplanned work is coming from. 
+** Unplanned work must be continuously eradicated (in size order) as per The Second Way, but it will always occur (Murphy's Law).
+
+## Preventing Unplanned Work
+It is important to design in features, and to reduce technical debt to prevent or reduce future unplanned work. 
+* Designing for features over stability, security, scalability, manageability, operability, continuity (and all the other 'itties)
+Non-functional requirements such as these need to be designed into the product at the start, they typically cannot be retrofitted later without significant additional cost. 
+
+# Cultural Change
+It is important to reinforce a culture of operational rigor and discipline, in order for this process to work.
+
+# Work Priorities
+1. Provider
+1. Parent
+1. Spouse
+1. Change Agent
