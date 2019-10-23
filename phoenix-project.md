@@ -19,13 +19,19 @@ Turn around time of supporting teams is excessively long.
 
 # Resolutions and Procudures
 ## Incident Resolution
-1. Pull together all of the information you know about the issue, e.g.
+### On an Incident Occurring
+* Create lines of communication between the team (chat room, conference phone etc) and meet frequently to discuss issue
+* Arrange for status updates to be sent out regularly (e.g. hourly).
+
+### Resolving the Incident
+1. Pull together all of the information you know about the issue, and present it to the team e.g.
   * process flowcharts showing information flow
   * symtoms of the problem - what's failing (and how) and what's still working
 1. Get a list of everything that's changed since the last-known-good state. This should be close at hand, from the work tracking system. 
-1. Provide some workarounds and solutions to the issue, noting strengths and weaknesses. Everyone must discuss changes they are thinking about, and no change should be made without agreement. 
 1. Create a timeline of events working up to the failure.
-, so that it doesn't happen again.
+1. Generate hypotheses for the issue (backed up with facts), and receive suggestions about some workarounds and solutions to the issue, noting strengths and weaknesses. Everyone must discuss changes they are thinking about, and no change should be made without agreement. 
+1. Review the hypotheses and assign people to lead the investigation into each of the most likely causes. 
+1. Perform a blameless postmortem to figure out what really happened and come up with ideas, so that it doesn't happen again.
 1. Schedule practice incident resolution. This is to embed the process in the team and get everyone used to solving problems in a methodical way. 
 
 ## Discovering Totality Of Current Work 
@@ -126,6 +132,8 @@ It is critical to protect your constraints in the system so that you can get max
 ** A boy-scout troop can only move at a pace dictated by the slowest member. Put the slowest member first to prevent others from going too far ahead. 
 ** Release all work in accordance to the rate it can be consumed by the constraint. This sets the tempo of work for the organisation.
 
+# Definition of Done
+Without a definition of done, one team can 'complete' their work, but may not have achieved everything they need to to hand over the task to the next team. Part of the responsibility for this is determining up-front what a task should achieve, with consideration for the next steps in the process. 
 
 # What is "Work"?
 Four types of work:
@@ -137,13 +145,33 @@ Four types of work:
 *** Coordinating changes so they don't fail (and create issues that need resolving)
 *** Ensure the orderly handling of incidents and outages to prevent interrupting key resources
 ***  (waste)
+*** It is not free, it is very expensive. Unplanned work is performed at the expense of all other (planned) work.
 ** It is important to find out where unplanned work is coming from. 
 ** Unplanned work must be continuously eradicated (in size order) as per The Second Way, but it will always occur (Murphy's Law).
+** Unplanned work also prevents proper planning of future work, due to its urgency, so teams end up just reacting. This causes more projects to be piled on, which causes a death spiral. 
 
 ## Preventing Unplanned Work
 It is important to design in features, and to reduce technical debt to prevent or reduce future unplanned work. 
 * Designing for features over stability, security, scalability, manageability, operability, continuity (and all the other 'itties)
 Non-functional requirements such as these need to be designed into the product at the start, they typically cannot be retrofitted later without significant additional cost. 
+
+## Accepting Work
+In a manufacturing plant, they review the order and the bill of materials and routings. Then they look at the loading of the relevant work centers in the plant and decide whether accepting more orders would jeapordise any existing commitments. (i.e. assess capacity and demand). This prevents the need to be scrambling to achieve all of the work, meaning less shortcuts are taken and less unplanned work occurs. 
+
+This is 'technical debt' that's not being paid down. It comes from taking shortcuts, which may make sense is the short-term but the compounding interest of the debt grows over time. If technical debt is not reduced, a team can spend all of its effort paying interest on the debt, in the form of unplanned work.
+
+It is important to be able to realistically assess your capacity and be able say "no" to more work if need be, so that projects can be scheduled and delivered successfully, otherwise work gets done by who shouts loudest. The key to this is knowing the constraints and their loading, and protecting it to prevent any of its time being wasted.
+
+## Resolving a backlog
+To increase control of the system, new work needs to be prevent, and other WIP work needs to be reduced or frozen in order to focus reducing the WIP of the most critical task, and improve performance. 
+* Due date performance increases as WIP goes down
+* Due date performance decreates as WIP goes up
+Even if it means people are less loaded, the waste is in the (invisible) WIP that's stuck in the system at present. 
+To get the critical task through, add additional resources where possible to get the work moving. 
+
+## Tackling techinical debt
+1. Identify the top areas of technical debt
+1. Tackle them in order to reduce the amount of unplanned work in the system. 
 
 # Cultural Change
 It is important to reinforce a culture of operational rigor and discipline, in order for this process to work.
