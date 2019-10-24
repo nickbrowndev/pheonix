@@ -34,6 +34,9 @@ Turn around time of supporting teams is excessively long.
 1. Perform a blameless postmortem to figure out what really happened and come up with ideas, so that it doesn't happen again.
 1. Schedule practice incident resolution. This is to embed the process in the team and get everyone used to solving problems in a methodical way. 
 
+### Preventing Future Incidents
+* Apply monitoring to critical systems for unauthorised changes
+
 ## Discovering Totality Of Current Work 
 Pull together all of the currently in-progress work, along with resources required, expected timeline to complete, prioritisation, deadline and impacts etc so that resourcing and a schedule can be worked out.
 This shows: 
@@ -153,6 +156,7 @@ Four types of work:
 ## Preventing Unplanned Work
 It is important to design in features, and to reduce technical debt to prevent or reduce future unplanned work. 
 * Designing for features over stability, security, scalability, manageability, operability, continuity (and all the other 'itties)
+* Prevent unanticipated changes to critical systems that may cause unplanned work through monitoring and configuration management.
 Non-functional requirements such as these need to be designed into the product at the start, they typically cannot be retrofitted later without significant additional cost. 
 
 ## Accepting Work
@@ -168,6 +172,61 @@ To increase control of the system, new work needs to be prevent, and other WIP w
 * Due date performance decreates as WIP goes up
 Even if it means people are less loaded, the waste is in the (invisible) WIP that's stuck in the system at present. 
 To get the critical task through, add additional resources where possible to get the work moving. 
+This 
+* makes people more focussed - less multitasking
+* reduces priority conflicts for people
+
+## Prioritisation of Work
+It's important to have a set prioritisation of work, otherwise the team members need to figure out their own prioritisation, and this is often based on:
+* who shouts loudest at them
+* who is most senior
+* who treats them well
+
+Prioritisation should depend on the work centers that have capacity to perform the work, along with the resources required to perform the work (Bill of Resources). However, prioritisation should also take into account whether the work will reduce the reliance on constraints in the system. Properly elevating preventative work is at the heart of programs like Total Productive Maintenance, which has been embraced by the Lean community. 
+> Improving daily work is even more important than doing daily work. 
+The Third Way is all about ensuring that we're continually putting tension into the system, so that we're continually reinforcing habits and improving something. Resilience engineering tells us that we should routinely inject faults into the system, doing them frequently to make them less painful.
+Mike Rother says that it almost doesn't matter what you improve, as long as you're improving something? This is because if you're not improving, entropy guarantees that you're actually getting worse, which ensures that there is no path to zero errors, zero work-related incidents, zero loss. This is the _Improvement Kata_.
+
+Katas are repetitious training. Repetition creates habits, habits enable mastery. Doing practice and drills is key to this. Frequent small practice is better than practicing less frequently for longer. To create a culture of improvement, you must create those habits. 
+
+## Work Center Work Load
+Just as important as throttling the release of work is managing the hand-offs between work centers. 
+> The wait time for a given resource is the percentage that resource is busy, divided by the percentage that the resource is idle. e.g. 50% utilisation = 50/50 = 1 unit. 90% utilisation = 90/10 = 9 units = 9 times longer! 99% utilisation = 99/1 = 99 times longer!!
+
+A critical part of the Second Way is making wait times visible, so you know when work spends days sitting in a queue, or worse, when it has to go backward, because it is imcomplete or requires rework. 
+
+As the goal is to maximise flow, it is as important to decrease waiting times to reduce the "total process time" of WIP. Often the "touch time" of some WIP is a small fraction of the the total process time, because items are spending a long time waiting to be processed by work centers. 
+
+
+
+### Bill of Materials and Bill of Resources
+In order to prioritise work, it is important to define these
+#### Bill of Materials
+Catalogue of all the prerequisits for completing the work. e.g.
+* Laptop model numbers
+* Specifications of user information
+* Software and Licences needed, along with their configurations
+* Version information
+* Security Requirements
+* Capacity Requirements
+* Continuity Requirements 
+* etc... 
+
+### Bill of Resources
+This is the Bill of Materials along with:
+* required work centers 
+* work center routing
+
+This will allow you to get a handle on what your capacity and demand is. That will enable you to know whether you can accept new work and be able to schedule the work. 
+
+# Identifying Flow of Work
+Understanding the flow of work is critical to achieving The First Way. This is about identifying the Work Centers that are the constraints in your organisation.
+Work centers are where work is done, and workers support them. When a worker is supporting too many work centers at once they are the constraint, because the work centers cannot then work in parallel.
+Work Centers are made up of four things:
+* Machine - This is the tools required to complete the task. This can be a type of equipment or in certain circumstances a specific machine. The number of these machines, and the capacity of each determine one constraint
+* Worker - This is who is required to operatate the machine. The skills of this person determine who is able to perform the work. 
+* Method - This needs to be standardised and documented so that other workers can execute it. This will also enable a level of consistence and quality. Documenting of the method (and supporting documentation), or reducing the complexity of the process (e.g. through innovation or automation) will increase the pool of workers who can complete the task, reducing the constraint.
+* Measures
 
 ## Tackling techinical debt
 1. Identify the top areas of technical debt
