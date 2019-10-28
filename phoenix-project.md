@@ -166,6 +166,12 @@ This is 'technical debt' that's not being paid down. It comes from taking shortc
 
 It is important to be able to realistically assess your capacity and be able say "no" to more work if need be, so that projects can be scheduled and delivered successfully, otherwise work gets done by who shouts loudest. The key to this is knowing the constraints and their loading, and protecting it to prevent any of its time being wasted.
 
+When accepting the work, it is necessary to reconcile the internal and external projects together to find dependencies by linking them together. This will show things such as upgrading a database that is due to be decommissioned. 
+Manufacturing Production Control Departments:
+* schedule and oversee all of production to ensure they can meet customer demand. 
+* when they accept an order, the confirm there's enough capacity and necessary inputs at each required work center, expediting work when necessary. 
+* work with the sales manager and plant manager to build a production schedule so that they can deliver on their commitments. 
+
 ### Questions to ask about the work. 
 In order to make good use of the time available, it is important to weigh up the benefits of each task. 
 * Does it increase the flow of project work through the organisation?
@@ -173,6 +179,13 @@ In order to make good use of the time available, it is important to weigh up the
 * Does it increase the capacity of the bottleneck? 
 * What would doing the task do to your project throughput? 
 * Does it increase scalability, availability, survivability, sustainability, security, supportability, defensibility of the organisation? 
+
+### Categorising Work
+Categorise work according to its importance. Typically this would be done with colour-coding the tasks, so that you can see at a glance what types of work are being performed. 
+* Changes supporting important business projects (e.g. top 5)
+* Other changes
+* Internal improvement projects
+* Blocked tasks. 
 
 ## Resolving a backlog
 To increase control of the system, new work needs to be prevent, and other WIP work needs to be reduced or frozen in order to focus reducing the WIP of the most critical task, and improve performance. 
@@ -183,6 +196,11 @@ To get the critical task through, add additional resources where possible to get
 This 
 * makes people more focussed - less multitasking
 * reduces priority conflicts for people
+
+When it comes time to release more work into the system, it should be done by which projects have been categorised as the priorities (e.g. Top 5). Otherwise, it comes down to the workload on the current constraint - i.e. it should be prioritised if it:
+* increases the capacity of the constraint, or prevents additional work going to the constraint (unplanned work)
+* does not require the constraint
+otherwise, it will tie up the constraint and reduce the throughput (improving something anywhere not at the constraint is an illusion). 
 
 ## Prioritisation of Work
 It's important to have a set prioritisation of work, otherwise the team members need to figure out their own prioritisation, and this is often based on:
@@ -197,6 +215,8 @@ Mike Rother says that it almost doesn't matter what you improve, as long as you'
 
 Katas are repetitious training. Repetition creates habits, habits enable mastery. Doing practice and drills is key to this. Frequent small practice is better than practicing less frequently for longer. To create a culture of improvement, you must create those habits. 
 
+Categorising the work is important when it comes to prioritising the work. 
+
 ## Work Center Work Load
 Just as important as throttling the release of work is managing the hand-offs between work centers. 
 > The wait time for a given resource is the percentage that resource is busy, divided by the percentage that the resource is idle. e.g. 50% utilisation = 50/50 = 1 unit. 90% utilisation = 90/10 = 9 units = 9 times longer! 99% utilisation = 99/1 = 99 times longer!!
@@ -205,7 +225,35 @@ A critical part of the Second Way is making wait times visible, so you know when
 
 As the goal is to maximise flow, it is as important to decrease waiting times to reduce the "total process time" of WIP. Often the "touch time" of some WIP is a small fraction of the the total process time, because items are spending a long time waiting to be processed by work centers. 
 
+## What is a Work Center?
+Work centers are where work is done, and workers support them. When a worker is supporting too many work centers at once they are the constraint, because the work centers cannot then work in parallel.
+Work Centers are made up of four things:
+* Machine - This is the tools required to complete the task. This can be a type of equipment or in certain circumstances a specific machine. The number of these machines, and the capacity of each determine one constraint. 
+* Worker - This is who is required to operatate the machine. The skills of this person determine who is able to perform the work. 
+* Method - This needs to be standardised and documented so that other workers can execute it. This will also enable a level of consistence and quality. Documenting of the method (and supporting documentation), or reducing the complexity of the process (e.g. through innovation or automation) will increase the pool of workers who can complete the task, reducing the constraint.
+* Measures
 
+For the example of configuring a server:
+1. Procurement of the server
+1. Installing of the server
+1. Configuration of the server to the specification required
+1. Validation of the server 
+
+### Organisation
+Work Centres are organised into Lanes of Work, which are controlled by Kanban boards. 
+
+## Applying Kanban to Key Resources
+Using a Kanban board to control the work that key resources complete can help the work get done faster by limiting the work-in-progress. It also helps to predict lead times for work and get faster throughput. It also gives better visibility of the workflow and tracking. 
+For the most frequent service requests:
+* Document what the steps are to complete them (these should obviously be revised if necessary once issues occur).
+* Determine what resources are needed 
+* Time how long each operation takes. 
+To reduce time, review each of the steps to either reduce the reliance on resources, re-order, or improve time. In order improve the quality of work, add checklists - especially between hand-offs - in order to reduce error rates. 
+
+## Improvement Katas
+Implement a two-week improvement cycle, and during each one implement one small Plan-Do-Check-Act project. 
+
+Allocate 20% of time towards improvement projects. 
 
 ### Bill of Materials and Bill of Resources
 In order to prioritise work, it is important to define these
@@ -229,12 +277,7 @@ This will allow you to get a handle on what your capacity and demand is. That wi
 
 # Identifying Flow of Work
 Understanding the flow of work is critical to achieving The First Way. This is about identifying the Work Centers that are the constraints in your organisation.
-Work centers are where work is done, and workers support them. When a worker is supporting too many work centers at once they are the constraint, because the work centers cannot then work in parallel.
-Work Centers are made up of four things:
-* Machine - This is the tools required to complete the task. This can be a type of equipment or in certain circumstances a specific machine. The number of these machines, and the capacity of each determine one constraint
-* Worker - This is who is required to operatate the machine. The skills of this person determine who is able to perform the work. 
-* Method - This needs to be standardised and documented so that other workers can execute it. This will also enable a level of consistence and quality. Documenting of the method (and supporting documentation), or reducing the complexity of the process (e.g. through innovation or automation) will increase the pool of workers who can complete the task, reducing the constraint.
-* Measures
+
 
 ## Tackling techinical debt
 1. Identify the top areas of technical debt
@@ -248,3 +291,8 @@ It is important to reinforce a culture of operational rigor and discipline, in o
 1. Parent
 1. Spouse
 1. Change Agent
+
+# Audit Controls
+https://itrevolution.com/audit-101-for-devops-resource-guide-for-the-phoenix-project-part-3-correctly-scoping-it-using-gait-and-gait-r/
+> GAIT - Generally Accepted IT Principles
+The findings of the Audit were mostly covered by the business processes that were already in place in the company, rather than by additional controls added to the IT. 
