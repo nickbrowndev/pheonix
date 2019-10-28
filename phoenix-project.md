@@ -166,6 +166,14 @@ This is 'technical debt' that's not being paid down. It comes from taking shortc
 
 It is important to be able to realistically assess your capacity and be able say "no" to more work if need be, so that projects can be scheduled and delivered successfully, otherwise work gets done by who shouts loudest. The key to this is knowing the constraints and their loading, and protecting it to prevent any of its time being wasted.
 
+### Questions to ask about the work. 
+In order to make good use of the time available, it is important to weigh up the benefits of each task. 
+* Does it increase the flow of project work through the organisation?
+* Does it increase operational stability or decrease the time required to detect and recover from outages or security breaches?
+* Does it increase the capacity of the bottleneck? 
+* What would doing the task do to your project throughput? 
+* Does it increase scalability, availability, survivability, sustainability, security, supportability, defensibility of the organisation? 
+
 ## Resolving a backlog
 To increase control of the system, new work needs to be prevent, and other WIP work needs to be reduced or frozen in order to focus reducing the WIP of the most critical task, and improve performance. 
 * Due date performance increases as WIP goes down
@@ -235,7 +243,7 @@ Work Centers are made up of four things:
 # Cultural Change
 It is important to reinforce a culture of operational rigor and discipline, in order for this process to work.
 
-# Work Priorities
+# Personal Work Priorities
 1. Provider
 1. Parent
 1. Spouse
