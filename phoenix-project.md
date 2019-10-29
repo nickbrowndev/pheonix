@@ -202,6 +202,8 @@ When it comes time to release more work into the system, it should be done by wh
 * does not require the constraint
 otherwise, it will tie up the constraint and reduce the throughput (improving something anywhere not at the constraint is an illusion). 
 
+When the backlog is resolved some more, additional projects can be released, but the priority should be on the identification of additional projects that will reduce the dependency on the constraint. 
+
 ## Prioritisation of Work
 It's important to have a set prioritisation of work, otherwise the team members need to figure out their own prioritisation, and this is often based on:
 * who shouts loudest at them
@@ -217,14 +219,6 @@ Katas are repetitious training. Repetition creates habits, habits enable mastery
 
 Categorising the work is important when it comes to prioritising the work. 
 
-## Work Center Work Load
-Just as important as throttling the release of work is managing the hand-offs between work centers. 
-> The wait time for a given resource is the percentage that resource is busy, divided by the percentage that the resource is idle. e.g. 50% utilisation = 50/50 = 1 unit. 90% utilisation = 90/10 = 9 units = 9 times longer! 99% utilisation = 99/1 = 99 times longer!!
-
-A critical part of the Second Way is making wait times visible, so you know when work spends days sitting in a queue, or worse, when it has to go backward, because it is imcomplete or requires rework. 
-
-As the goal is to maximise flow, it is as important to decrease waiting times to reduce the "total process time" of WIP. Often the "touch time" of some WIP is a small fraction of the the total process time, because items are spending a long time waiting to be processed by work centers. 
-
 ## What is a Work Center?
 Work centers are where work is done, and workers support them. When a worker is supporting too many work centers at once they are the constraint, because the work centers cannot then work in parallel.
 Work Centers are made up of four things:
@@ -239,8 +233,26 @@ For the example of configuring a server:
 1. Configuration of the server to the specification required
 1. Validation of the server 
 
+## Work Center Work Load
+Just as important as throttling the release of work is managing the hand-offs between work centers. 
+> The wait time for a given resource is the percentage that resource is busy, divided by the percentage that the resource is idle. e.g. 50% utilisation = 50/50 = 1 unit. 90% utilisation = 90/10 = 9 units = 9 times longer! 99% utilisation = 99/1 = 99 times longer!!
+
+A critical part of the Second Way is making wait times visible, so you know when work spends days sitting in a queue, or worse, when it has to go backward, because it is imcomplete or requires rework. 
+
+As the goal is to maximise flow, it is as important to decrease waiting times to reduce the "total process time" of WIP. Often the "touch time" of some WIP is a small fraction of the the total process time, because items are spending a long time waiting to be processed by work centers. This is compounded by multiple hand-offs between work centers, if each work center is busy, each hand off is delayed, causing a severe total delay. 
+
 ### Organisation
-Work Centres are organised into Lanes of Work, which are controlled by Kanban boards. 
+Work Centres are organised into Lanes of Work, which are controlled by Kanban boards. Recurring tasks (such as a deployment) should be organised into individual lanes. 
+
+### Standardisation 
+It is important to document and standardise the recurring work to gain mastery over it. This also helps to enforce uniformity between results, leading to greater knowledge sharing (avoiding the 'snowflake' problem of bespoke configurations), and can reduce dependencies on specific resources (the only ones that know specific things). 
+
+Work on identifying and standardising the most frequently recurring tasks (e.g. top 20). 
+
+If flow of work is an issue, assign someone a new role, a combination of project manager and expiditer that helps critical work to be pushed through work centers. They will wait at the work center until the work is completed. This is analogous to the 'water spider' role in manufacturing plants. This prevents important work being held in queues or handoffs. This is only a temporary role, project processes should handle this in normal situations. 
+
+### Reduce Work Center Work Load to Increase Throughput
+What the result of this loading on Work Centers means, is that to reduce the wait time you need to reduce the loading on Work Centers. High work center loading causes long wait delays for a task to be completed. 
 
 ## Applying Kanban to Key Resources
 Using a Kanban board to control the work that key resources complete can help the work get done faster by limiting the work-in-progress. It also helps to predict lead times for work and get faster throughput. It also gives better visibility of the workflow and tracking. 
