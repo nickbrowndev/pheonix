@@ -308,3 +308,68 @@ It is important to reinforce a culture of operational rigor and discipline, in o
 https://itrevolution.com/audit-101-for-devops-resource-guide-for-the-phoenix-project-part-3-correctly-scoping-it-using-gait-and-gait-r/
 > GAIT - Generally Accepted IT Principles
 The findings of the Audit were mostly covered by the business processes that were already in place in the company, rather than by additional controls added to the IT. 
+
+Audit and security concerns have to be managed at a company level, so that processes and controls that contribute to the security can be put in place, resulting in a strategy that's not just based around IT solutions. 
+
+# Understanding the Financial Business
+Having a meeting with the one of the Financial Executives of the company to understand what makes them tick
+* What do you do at this company?
+* What differentiates a good day from a bad day for you?
+* What are you goals, objectives and measurements for this year?
+
+## Financial Goals
+* Health of company
+* Revenue
+* Market share
+* Average order size
+* Profitability
+* Return on assets
+* Health of Finance
+* Order to cash cycle
+* Accounts receivable
+* Accurate and timely financial reporting
+* Borrowing costs
+
+While the financial goals are important, they're not the most important. The company can hit its financial targets but still fail. The best accounts team can't prevent failure if the company is in the wrong market with the wrong product strategy and can't deliver a product (IT). 
+
+This goes back to the first way - Systems Thinking - always confirming that the entire organisation achieves its goal, not just one part of it. 
+
+## Company Goals
+There are also goals thath the company has as a whole. 
+* Are we competitive?
+* Understanding customer needs and wants: Do we know what to build?
+* Product portfolio: Do we have the right products?
+* R&D effectiveness: Can we build it effectively?
+* Time to market: Can we ship it soon enough to matter?
+* Sales pipeline: Can we convert products to interested prospects?
+* Are we effective?
+* Customer on-time delivery: Are customers getting what we promised them?
+* Customer retention: Are we gaining or losing customers?
+* Sales forecast accuracy: Can we factor this into our sales planning process?
+
+Ask which of these measurements are most at risk?
+
+Taking these company goals and feeding them back to the lower teams is important to show them how they can help achieve them, and focus work in advancing them. These initiatives often have people responsible for managing them, it's worthwhile talking to them also to find out:
+* What their exact roles are
+* What business processes underpin their goals
+* List of top things that jeapordise those goals
+
+Then it's necessary to understand the value chains required to achieve each of the goals, including the ones that aren't so visible - such as IT. For example, for a delivery company vehicle maintenance is critical, so preventing breakdowns by replacing the oil regularly will help prevent this. This is akin to applying patching and change management policies. This shows how IT risks jeopardise business performance measures, which enables you to make better decisions. 
+
+The KPIs of the company (such as on-time delivery) can be predicted by using forward-looking KPIs (e.g. percentage of vehicles that have had their required oil changes performed). Failure with the forward looking KPIs indicates upcoming failure of company KPIs. 
+
+Most of these objectives usually depend on IT performance. Understanding and making those links clear is important to know why the company is not meeting its goals, and why the IT is often undervalued. This is about understanding the true business context that IT resides in. W. Edwards Deming called this 'appreciation for the system'. 
+
+This is about discovering what really matters in IT. You must discover:
+* where you've under-scoped IT - where certain portions of the processes and technology actively jeapordises the achievement of business goals
+* where you've over-scoped IT - where there are additinoal controls that are unnecessary as they're being covered elsewhere. 
+
+Once you've built the value chains, assemble concrete examples of how IT issues have jeopardised those goals in the past. 
+
+There are only three internal control objectives
+* To gain assurance for reliability of financial reporting
+* Compliance with laws and regulations
+* Efficiency and effectiveness of operations. 
+This is known as the '_COSO Cube_'.
+
+
