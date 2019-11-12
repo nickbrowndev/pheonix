@@ -378,3 +378,12 @@ What does a bad day look like for them? This often highlights their priorities a
 These discussions indicate what systems and processes are critical to meeting the company's goals, and then you can review this to work out if any of the systems need maintenance or upgrading to better support the company. It also shows which functionality in the systems will help to support the company, and not just the end user. 
 Because this is all based upon the measures given by the management, they are the most important goals of the company.
 
+## Mitigating Risks
+Knowing this, and having identified the business risk for each system, you can work on each of them to identify mitigations for the risks (e.g. schedule maintenance). You then review this with the person to make sure you've identified the right things. 
+The operational risks posed by IT need to be managed just like any other business risk - they _are_ business risks. 
+
+Work with the management team to better nail down the risks and mitigations. 
+
+## Leading Performance Indicators
+To mitigate these risks, you need to identify and implement leading performance indicators, so that you can know whether you're going to achieve the goals or not, so that appropriate action can be taken. 
+
