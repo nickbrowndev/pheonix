@@ -372,4 +372,9 @@ There are only three internal control objectives
 * Efficiency and effectiveness of operations. 
 This is known as the '_COSO Cube_'.
 
+# Learning From Other Departments
+It's key to find out what issues they are having. Typically, they are trying to hit the targets given to them by above. They will likely have ideas about how to change what is happening to get a better outcome. This helps to prioritise the work the IT department performs so that it can help its business better - e.g. better reports functionality. 
+What does a bad day look like for them? This often highlights their priorities and their dependencies on IT - and what systems are critical for achieving their goals. Also, this shows deficiencies in the current systems, so improvements can be identified to support the goals of the other departments. 
+These discussions indicate what systems and processes are critical to meeting the company's goals, and then you can review this to work out if any of the systems need maintenance or upgrading to better support the company. It also shows which functionality in the systems will help to support the company, and not just the end user. 
+Because this is all based upon the measures given by the management, they are the most important goals of the company.
 
