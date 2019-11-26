@@ -36,6 +36,7 @@ Turn around time of supporting teams is excessively long.
 
 ### Preventing Future Incidents
 * Apply monitoring to critical systems for unauthorised changes
+* Investigate how production vulnerabilities occurred in the first place, so that they can be prevented from happening again. 
 
 ## Discovering Totality Of Current Work 
 Pull together all of the currently in-progress work, along with resources required, expected timeline to complete, prioritisation, deadline and impacts etc so that resourcing and a schedule can be worked out.
@@ -72,6 +73,9 @@ The number of changes submitted was massive. This meant that although they could
 
 ### Resource Dependency Planning
 Additionally, tasks that require scarce resources or people (environments, people, hardware etc) must be identified at task submission. This prevents work competing for resources to be released into WIP. The tasks that do need competing resources should then identify if a substitute can be used (another person) or be prioritised and scheduled. (ToC). 
+
+### Audit/Security(/Other) Considerations
+The systems that are audited, or are security critical or have other implications should be flagged so that work requests submitted to those systems should have additional scrutinisation and any additional tasks required to maintain a good position.
 
 ## Proritisation Of Changes
 Categorise tasks based upon the anticipated impact or risk of the change
@@ -387,3 +391,5 @@ Work with the management team to better nail down the risks and mitigations.
 ## Leading Performance Indicators
 To mitigate these risks, you need to identify and implement leading performance indicators, so that you can know whether you're going to achieve the goals or not, so that appropriate action can be taken. 
 
+## Integral Security
+Security should be embedded within teams to share the expertise amongst the team. This enables integration of security into all of the daily work, and not after things are deployed. 
