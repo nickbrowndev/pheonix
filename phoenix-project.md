@@ -31,12 +31,15 @@ Turn around time of supporting teams is excessively long.
 1. Create a timeline of events working up to the failure.
 1. Generate hypotheses for the issue (backed up with facts), and receive suggestions about some workarounds and solutions to the issue, noting strengths and weaknesses. Everyone must discuss changes they are thinking about, and no change should be made without agreement. 
 1. Review the hypotheses and assign people to lead the investigation into each of the most likely causes. 
-1. Perform a blameless postmortem to figure out what really happened and come up with ideas, so that it doesn't happen again.
-1. Schedule practice incident resolution. This is to embed the process in the team and get everyone used to solving problems in a methodical way. 
+1. Once the solution is known, plan a path to resolution, and notify the necessary people about the plan and ETC. 
+1. Build a list of possible issues that may occur if the resolution was hastily done or temporary, and communicate this with the necessary parties. Also include details on how to report further issues. 
+1. When the fix is deployed, ensure there is standby cover for any further issues for a time. 
 
 ### Preventing Future Incidents
-* Apply monitoring to critical systems for unauthorised changes
-* Investigate how production vulnerabilities occurred in the first place, so that they can be prevented from happening again. 
+1. Perform a blameless postmortem to figure out what really happened and come up with ideas, so that it doesn't happen again.
+1. Schedule practice incident resolution. This is to embed the process in the team and get everyone used to solving problems in a methodical way. 
+1. Apply monitoring to critical systems for unauthorised changes
+1. Investigate how production vulnerabilities occurred in the first place, so that they can be prevented from happening again. 
 
 ## Discovering Totality Of Current Work 
 Pull together all of the currently in-progress work, along with resources required, expected timeline to complete, prioritisation, deadline and impacts etc so that resourcing and a schedule can be worked out.
@@ -76,6 +79,8 @@ Additionally, tasks that require scarce resources or people (environments, peopl
 
 ### Audit/Security(/Other) Considerations
 The systems that are audited, or are security critical or have other implications should be flagged so that work requests submitted to those systems should have additional scrutinisation and any additional tasks required to maintain a good position.
+
+There may be other considerations for outsourcing or sharing work such as storing confidential data, affecting financial reporting etc. This needs to be reviewed so that the work doesn't impact existing commitments. 
 
 ## Proritisation Of Changes
 Categorise tasks based upon the anticipated impact or risk of the change
@@ -393,3 +398,34 @@ To mitigate these risks, you need to identify and implement leading performance 
 
 ## Integral Security
 Security should be embedded within teams to share the expertise amongst the team. This enables integration of security into all of the daily work, and not after things are deployed. 
+
+# Seeing the Benefits of these changes
+These are the changes noted in the book (but should not be taken as accurate).
+* Number of outages down by 2/3rds
+* Incident recovery time reduced by half
+* Working with a shared understanding of how to help the business win towards the whole company's goals
+* Systems and project work starts flowing faster
+* Reduction of dependencies on key resources
+* Knowledge is shared amongst the team, so that all members can contribute, which helps us fix things faster
+* Escalation of incidents is rehearsed, well practiced and performed in an orderly fashion.
+* Additional monitoring of infrastructure leads to pre-emptive notification of incidents
+* Reduction in the number of projects, due to determining which are unnecessary, and increasing the importance of improvement projects
+* Review of incidents leads to hardening of development and deployment processes, gaining confidence that issues will never re-occur. 
+* Change management occurs more smoothly, and work flows more easily. 
+* People know exactly what they need to be working on, and motivation improves
+* Reviewing work travelling backwards leads to better throughput of work
+* Less work on the table means things get completed more quickly
+* Removed outdated work from the ticketing system, leading to confidence that the work in the system is important and has opportunity to be completed. 
+* Given a better idea of the flow of work, more work can be performed concurrently without jamming up the system and impacting existing commitments. 
+
+This is the effect of the First Way:
+* curbing the handoffs of defects to downstream work centres
+* managing the flow of work
+* setting the tempo by our constraints
+* understanding what is important vs what is not
+
+## Team Practice
+Great teams perform best when they practice. 
+> Practice creates habits, habits create mastery of any process or skill. 
+This creates trust and transparency.
+The team did an outage drill bi-weekly. This would lead to much faster resolution time and better outcome for the company. 
