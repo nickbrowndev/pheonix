@@ -123,6 +123,10 @@ These are rolled up into The Three Ways:
 ** Look for ways to prevent work entering the system - make sure all work complies with the business objectives. 
 * Second Way - shorten and amplify feedback loops to create quality at source and reduce defects. 
 ** This is key to reducing unplanned work, which kills productivity.
+** This is done by
+*** creating constant feedback loops from IT Ops into Development
+*** designing quality into the product at the earliest stages
+*** this must be done by having much faster release schedule 
 * Third Way - culture that fosters experimentation, learning from failure, understanding repetition and practice are the key to mastery. 
 
 > The goal is to ensure the fast, predictable and uninterrupted flow of planned work that delivers value to the business while minimising the impact and disruption of unplanned work, so you can provide stable, predictable and secure IT services. 
@@ -299,6 +303,16 @@ This will allow you to get a handle on what your capacity and demand is. That wi
 # Identifying Flow of Work
 Understanding the flow of work is critical to achieving The First Way. This is about identifying the Work Centers that are the constraints in your organisation.
 
+# Observing the Flow of Work
+Work should only go in one direction - forward. When work is going backwards, it means waste. This might be because of defects, lack of specification or rework. The goal is single-piece flow. In any system of work, the theoretical ideal is a single-piece flow, which maximises throughput and minimises variance. To get there you must reduce batch sizes. 
+
+> You'll never hit the target you're aiming at if you can fire the cannon only once every nine months. Stop thinking about Civil-War era cannon, start thinking antiaircraft guns. 
+
+Deployments are still done as if they are physical servers. "As Goldratt would say, you've deployed an amazing technology but because you haven't actually changed the way you work, you haven't actually dimininshed a limitation."
+
+An inevitable consequence of long release cycles is that you'll never hit the internal rate of return targets, once you factor in the cost of labour. You must have faster cycle times. To get there, you must put your constraint 'at the front' like the line of Scouts. 
+
+In the book the folks deployed a SWAT team to address important features without the overhead/baggage of the main product. 
 
 ## Tackling techinical debt
 1. Identify the top areas of technical debt
@@ -420,9 +434,14 @@ These are the changes noted in the book (but should not be taken as accurate).
 
 This is the effect of the First Way:
 * curbing the handoffs of defects to downstream work centres
-* managing the flow of work
+* managing the flow of work 
+** - freezing and throttling project releases)
+** - reduce WIP by decreasing batch size. This should reduce uplanned recovery work. 
 * setting the tempo by our constraints
 * understanding what is important vs what is not
+
+This is the effect of the Second Way:
+* create 
 
 ## Team Practice
 Great teams perform best when they practice. 
