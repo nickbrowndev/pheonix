@@ -232,6 +232,31 @@ Katas are repetitious training. Repetition creates habits, habits enable mastery
 
 Categorising the work is important when it comes to prioritising the work. 
 
+## Plant Manufacturing
+A manufacturing plant is a system. Raw materials start one side and a million things need to go just right for it to leave as finished goods as scheduled on the other side. Everything works togehter. If any work center is warring with the other work centers, especially if Manufacturing is at war with Engineering, every inch of progress will be a struggle.
+
+It's important to stop thinking like a work center supervisor. You need to think bigger, like a plant manager, or better yet as the designer of the plant and its processes. They look at the flow of work, identify the constraints and use every possible technology and bit of process knowledge to ensure work is performed effectively and efficiently. 
+
+In manufacturing, *takt* time is the cycle time to keep up with customer demand. If any operation takes longer than the takt time, you will not be able to keep up with demand. When you can't deliver, it means the cycle time of some critical operation is greater than the takt time, and is the reason for not keeping up with demand. 
+
+To resolve this, a feedback loop needs to be created that goes all the way back to the earliest parts of product definition, design and development - or possibly even earlier. Removal of this constraint is key. 
+Examples:
+* Toyota re-engineered their hood-stamping machine, preparations and processes to bring the changeover time from three days to 10 minutes. 
+* Manufacturing plant combining their painting and curing machines into one machine, eliminating 30 manual error-prone steps, eliminating set up time and achieving single-piece flow. 
+
+This resulted in the following benefits:
+* throughput went up dramatically
+* when defects were found, they were fixed immediately and other parts of the batch didn't have to be scrapped
+* WIP was reduced and work centers didn't overproduce products which sat in the queue of the next work center
+* order lead times were cut from a month to a week. 
+* stock levels were reduced due to increased agility.
+
+For software, you need to reduce your changeover time and enable faster deployments. Allspaw and Hammond ran the IT Operations and Engineering groups at Flickr. They had worked it up to doing ten deployements a day. They taught us that Dev and Ops working together, along with QA and the business, are a super-tribe that can achieve amazing things. He also knew that until code is in production, no value is being generated, and it's merely WIP stuck in the system. By reducing batch sizes, enabling fast feature flow. This was done by ensuring environments were always available when they were needed. He automated the build and deployment process, recognising that infrastructure could be treated as code, just like the application that Deployment ships. That enabled a one-step environment creation and deployment procedure (just like painting and curing procedure above). 
+
+To realise these benefits, you need to create a deployment pipeline. That's your entire value stream from code check-in to production. You need to get everything in version control. Everything. Not just code, but everything required to build the environment. Then you need to automate the entire environment creation process. You need a deployment pipeline where you can create test and production environments, and then deploy code into them, entirely on demand. That's how you reduce your set-up times and eliminate errors, so you can finally match what-ever rate of change Development sets the tempo at. 
+
+This is to enable business agility, not raw speed. It's about how good you are at detecting and responding to changes in the market and being able to take larger and more calculated risks. 
+
 ## What is a Work Center?
 Work centers are where work is done, and workers support them. When a worker is supporting too many work centers at once they are the constraint, because the work centers cannot then work in parallel.
 Work Centers are made up of four things:
