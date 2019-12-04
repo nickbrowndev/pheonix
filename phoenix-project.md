@@ -257,6 +257,40 @@ To realise these benefits, you need to create a deployment pipeline. That's your
 
 This is to enable business agility, not raw speed. It's about how good you are at detecting and responding to changes in the market and being able to take larger and more calculated risks. 
 
+## Achieving Multiple Deployments Daily
+Why would you want to?
+* Can deploy small fixes into production
+* Can perform A/B testing on features and promotions
+
+What are the benefits
+* Tension to reduce the deployment time
+* Rapid feedback and agility to respond
+
+### Value Stream Mapping
+1. Map out the process that current goes from code check-in to production deployment. This is a "value-stream map".
+1. Mark where you have had problems during previous deployments.
+1. Add typical time for completion on each of the boxes. 
+1. Add a triangle to boxes where work has to wait, to indicate WIP
+
+This indicates that there are two issues at work in a typical deployment phase - "environment"s and "deployment"s
+* Environments 
+** are not available when need
+** considerable rework is required to get them synchronised
+** Are typically not synchronised between development, QA, Production etc, nor even between developers. 
+** Require a lengthy setting up process for developers. 
+* Deployments
+** Code packaging process is lengthy and error prone. 
+** Knowledge needs to be passed on between software, build manager and release deployment person
+** Failures are typically only known when the system is running
+
+Standardising environments in daily use by Dev, QA and Operations means that much of the variance can be removed, resulting in much easier builds. Development builds the exact environment along with the code, and checks that into version control. 
+
+To redesign the process, the right people need to be included up-front. This is like the manufacturing engineering group ensuring that all parts are designed so that they are optimized for manufacturing and that the manufacturing lines are optimized for the parts, ideally in single-piece flow.
+
+Improvements made in the book:
+* At the point of check-in, the code gets packaged immediately. When it gets labelled "ready to test", the package is then generated and committed. This starts an automated deployment into the QA environment, and later into the production environment.
+* Add someone from security (John) to the start of the process to advise and approve changes, advise on risks and mitigations etc. 
+
 ## What is a Work Center?
 Work centers are where work is done, and workers support them. When a worker is supporting too many work centers at once they are the constraint, because the work centers cannot then work in parallel.
 Work Centers are made up of four things:
@@ -329,7 +363,9 @@ This will allow you to get a handle on what your capacity and demand is. That wi
 Understanding the flow of work is critical to achieving The First Way. This is about identifying the Work Centers that are the constraints in your organisation.
 
 # Observing the Flow of Work
-Work should only go in one direction - forward. When work is going backwards, it means waste. This might be because of defects, lack of specification or rework. The goal is single-piece flow. In any system of work, the theoretical ideal is a single-piece flow, which maximises throughput and minimises variance. To get there you must reduce batch sizes. 
+Work should only go in one direction - forward. When work is going backwards, it means waste. This might be because of defects, lack of specification or rework. When work flows backwards, it typically isn't well documented, which means that it isn't reproduceable and this situation will get worse over time as speed increases. This is a non-value add activity (waste).
+
+The goal is single-piece flow. In any system of work, the theoretical ideal is a single-piece flow, which maximises throughput and minimises variance. To get there you must reduce batch sizes. 
 
 > You'll never hit the target you're aiming at if you can fire the cannon only once every nine months. Stop thinking about Civil-War era cannon, start thinking antiaircraft guns. 
 
