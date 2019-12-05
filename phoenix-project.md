@@ -251,11 +251,16 @@ This resulted in the following benefits:
 * order lead times were cut from a month to a week. 
 * stock levels were reduced due to increased agility.
 
+## Faster Deployments, Increased Agility
 For software, you need to reduce your changeover time and enable faster deployments. Allspaw and Hammond ran the IT Operations and Engineering groups at Flickr. They had worked it up to doing ten deployements a day. They taught us that Dev and Ops working together, along with QA and the business, are a super-tribe that can achieve amazing things. He also knew that until code is in production, no value is being generated, and it's merely WIP stuck in the system. By reducing batch sizes, enabling fast feature flow. This was done by ensuring environments were always available when they were needed. He automated the build and deployment process, recognising that infrastructure could be treated as code, just like the application that Deployment ships. That enabled a one-step environment creation and deployment procedure (just like painting and curing procedure above). 
 
 To realise these benefits, you need to create a deployment pipeline. That's your entire value stream from code check-in to production. You need to get everything in version control. Everything. Not just code, but everything required to build the environment. Then you need to automate the entire environment creation process. You need a deployment pipeline where you can create test and production environments, and then deploy code into them, entirely on demand. That's how you reduce your set-up times and eliminate errors, so you can finally match what-ever rate of change Development sets the tempo at. 
 
 This is to enable business agility, not raw speed. It's about how good you are at detecting and responding to changes in the market and being able to take larger and more calculated risks. 
+
+One of the benefits of this standardised and consistent environment and deployment process is that you can scale the application on-demand, and do things previously impossible - such as look to cloud providers to provide compute power on demand. 
+
+Also, look into things such as feature toggles, that may be required when building new work that you don't want to be shown, or need to turn of resource-intensive tasks during a period of high demand. 
 
 ## Achieving Multiple Deployments Daily
 Why would you want to?
@@ -337,7 +342,12 @@ To reduce time, review each of the steps to either reduce the reliance on resour
 ## Improvement Katas
 Implement a two-week improvement cycle, and during each one implement one small Plan-Do-Check-Act project. 
 
-Allocate 20% of time towards improvement projects. 
+Allocate 20% of time towards improvement projects. This can be spent on 
+* improving monitoring for production systems
+* improving fragility of specific systems and parts of the application
+* destructive/mischevious testing of infrastructure to improve resiliency (killing processes, deploying intentionally broken code). 
+* security testing to target application vulnerabilities
+* stress testing
 
 ### Bill of Materials and Bill of Resources
 In order to prioritise work, it is important to define these
